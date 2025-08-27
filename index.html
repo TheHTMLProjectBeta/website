@@ -8,10 +8,7 @@
   <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-  
-  <style>
-  
-  </style>
+  <link rel="stylesheet" href="https://assets.thehtmlproject.com/css/beta/index/style.css" />
 </head>
 <body>
   <div class="header">
@@ -22,21 +19,6 @@
     <h1>THP is currently under maintenance and will be back up soon.</h1>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const siteLogo = document.getElementById("site-logo");
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        siteLogo.src = "https://assets.thehtmlproject.com/img/logodark.png";
-      }
-
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-        if (event.matches) {
-          siteLogo.src = "https://assets.thehtmlproject.com/img/logodark.png";
-        } else {
-          siteLogo.src = "https://assets.thehtmlproject.com/icon.jpeg";
-        }
-      });
-    });
-  </script>
+  <script src="https://assets.thehtmlproject.com/script/index/script.js" defer></script>
 </body>
 </html>
