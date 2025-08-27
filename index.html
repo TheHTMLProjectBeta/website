@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maintenance - The HTML Project</title>
+  <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  
+  <style>
+  
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img id="site-logo" src="https://assets.thehtmlproject.com/icon.jpeg" alt="Logo" />
+  </div>
+
+  <div class="maintenance-message">
+    <h1>THP is currently under maintenance and will be back up soon.</h1>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const siteLogo = document.getElementById("site-logo");
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        siteLogo.src = "https://assets.thehtmlproject.com/img/logodark.png";
+      }
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+          siteLogo.src = "https://assets.thehtmlproject.com/img/logodark.png";
+        } else {
+          siteLogo.src = "https://assets.thehtmlproject.com/icon.jpeg";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
