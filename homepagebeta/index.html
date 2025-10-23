@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Home - The HTML Project</title>
+  <meta name="description" content="The HTML Project: tools, links, and experiments by THP." />
+  <link rel="canonical" href="https://thehtmlproject.com/" />
+  <meta property="og:title" content="The HTML Project" />
+  <meta property="og:description" content="Tools, links, and experiments by THP." />
+  <meta property="og:url" content="https://thehtmlproject.com/" />
+  <meta property="og:image" content="https://assets.thehtmlproject.com/og/cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#121212">
+  <link rel="icon" href="https://assets.thehtmlproject.com/icon.jpeg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300..900;1,300..900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" role="banner">
+    <img id="site-logo" src="https://assets.thehtmlproject.com/icon.jpeg" alt="The HTML Project logo" fetchpriority="high" />
+    <h1 class="visually-hidden">The HTML Project</h1>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-pressed="false" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="material-symbols-outlined" id="modeIcon">light_mode</span>
+    </button>
+  </header>
+
+  <main class="content-area" role="main">
+    <section class="my-message-box" id="messageBox" aria-labelledby="messageHeading">
+      <div class="update-indicator" id="updateIndicator"></div>
+      <h2 id="messageHeading">A Message from Asher:</h2>
+      <p id="messageText">Hey everyone! I'm constantly working to improve The HTML Project and bring you new features and content. Your support means the world to me. If you have any suggestions or find any bugs, please use the "Report a Bug" link in the footer. Thanks for being awesome!</p>
+      <a id="changelogLink" href="/changelog" class="changelog-link" target="_blank" rel="noopener noreferrer">View Changelog</a>
+    </section>
+
+    <nav class="main-links-grid" aria-label="Primary links">
+      <a id="discordJoinBtn" class="link-button primary" href="/discord" target="_blank" rel="noopener noreferrer">
+        <span class="btn-inner">
+          <span class="material-symbols-outlined" id="discordIcon">chat</span>
+          <span id="discordText" class="btn-text">Join the THP Discord Server</span>
+        </span>
+        <span id="discordCheck" class="material-symbols-outlined check-icon" aria-hidden="true">check</span>
+      </a>
+      <a href="/games" class="link-button" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">sports_esports</span>
+        <span class="btn-text">Play Games</span>
+      </a>
+      <a href="/classic" class="link-button" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">history</span>
+        <span class="btn-text">The classic THP</span>
+      </a>
+      <a href="/links" class="link-button" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">link</span>
+        <span class="btn-text">Other THP access links</span>
+      </a>
+      <a href="/masker" class="link-button" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">visibility_off</span>
+        <span class="btn-text">About:Blank masker</span>
+      </a>
+      <a href="https://youtu.be/ufwLANtaFfI?si=_d-6h7C7GpmQFcbD" class="link-button" target="_blank" rel="noopener noreferrer">
+        <span class="material-symbols-outlined">movie</span>
+        <span class="btn-text">Definitely NOT a Rickroll</span>
+      </a>
+      <a href="/contact" class="link-button">
+        <span class="material-symbols-outlined">mail</span>
+        <span class="btn-text">Contact me</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Made with 💚 by Asher from The HTML Project</p>
+    <a href="/hyperlinks/reportabug/index.html" target="_blank" rel="noopener noreferrer">Report a Bug</a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
